@@ -1,0 +1,67 @@
+import { useState, useEffect } from "react";
+import { ref, onValue, set } from "firebase/database";
+import db from "./FbConfig";
+
+export default function Update(props) {
+    const [emno, setEmno] = useState("");
+    const [name, setName] = useState("");
+    const [empsalary, setEmpSalary] = useState("");
+
+    useEffect(() => {
+        const { emno } = props.match.params;
+        const employeeRef = ref(db, `em/${emno}`);
+        onValue(employeeRef, (snapshot) => {
+            const employee = snapshot.val();
+            if (employee) {
+                setEmno(emno);
+                setName(employee.name);
+                setEmpSalary(employee.empsalary);
+            }
+        });
+    }, [props.match.params]);
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+
+        const feedbackRef = ref(db, `em/${emno}`);
+        const updatedFeedback = {
+            name: name,
+            empsalary: empsalary,
+        };
+
+        set(feedbackRef, updatedFeedback)
+            .then(() => {
+                console.log("Feedback updated successfully.");
+            })
+            .catch((error) => {
+                console.error("Error updating feedback:", error);
+            });
+    };
+
+    return (
+        <div>
+            <h1>Update Employee</h1>
+            <form onSubmit={handleSubmit}>
+                <div>
+                    <label htmlFor="name">Name:</label>
+                    <input
+                        type="text"
+                        id="name"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                    />
+                </div>
+                <div>
+                    <label htmlFor="empsalary">Employee Salary:</label>
+                    <input
+                        type="text"
+                        id="empsalary"
+                        value={empsalary}
+                        onChange={(e) => setEmpSalary(e.target.value)}
+                    />
+                </div>
+                <button type="submit">Update</button>
+            </form>
+        </div>
+    );
+}

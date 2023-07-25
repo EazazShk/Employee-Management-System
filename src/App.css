@@ -1,0 +1,277 @@
+* {
+    font-size: 35px;
+    font-family: courier;
+}
+
+body {
+    background-image: url("img.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.nav {
+    background-color: rgba(255, 255, 255, 0.53);
+    font-size: 40px;
+    border-radius: 30px;
+    position: sticky;
+    top: 0;
+}
+
+.nav a {
+    color: rgb(245, 63, 7);
+
+    text-decoration: none;
+    margin: 5%;
+}
+
+#container1 {
+    width: 1000px;
+
+    background-color: rgba(255, 255, 255, 0.53);
+
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(0, 0, 0, 0.25) 1px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#containerH {
+    width: 700px;
+    background-color: rgba(255, 255, 255, 0.53);
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(0, 0, 0, 0.25) 1px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#deletebutton,
+#logout,
+#resetbutton,
+#AdLogin,
+#LoginButton,
+#deleteuser,
+#homesubbutton,
+#updatebutton,
+#backbutton {
+    width: 150px;
+    height: 60px;
+    border: 3px solid #f29c079e;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: transparent;
+    font-size: 17px;
+    font-weight: 550;
+    font-family: "Courier New", Courier, monospace;
+}
+
+#AdLogin:hover,
+#LoginButton:hover,
+#regbutton:hover,
+#homesubbutton:hover,
+#updatebutton:hover {
+    background: #38e212;
+    color: white;
+    font-size: 23px;
+    padding: 10px;
+}
+
+#deletebutton:hover,
+#logout:hover,
+#resetbutton:hover,
+#deleteuser:hover,
+#backbutton:hover {
+    background: #ef0d0d;
+    color: white;
+    font-size: 22px;
+    padding: 10px;
+}
+
+#deletebutton:active,
+#logout:active,
+#resetbutton:active,
+#deleteuser:active,
+#homesubbutton:active,
+#AdLogin:active,
+#LoginButton:active,
+#updatebutton:active,
+#backbutton:active {
+    opacity: 0.5;
+}
+
+#container3,
+#container4 {
+    position: absolute;
+    width: 550px;
+    height: auto;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.53);
+    box-shadow: rgba(0, 0, 0, 0.25) 1px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#container2 {
+    position: absolute;
+    width: 550px;
+    height: auto;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+
+    background-color: rgba(255, 255, 255, 0.53);
+
+    box-shadow: rgba(0, 0, 0, 0.25) 1px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#container5 {
+    position: absolute;
+    width: 550px;
+    height: auto;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+
+    background-color: rgba(255, 255, 255, 0.53);
+    box-shadow: rgba(0, 0, 0, 0.25) 1px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#container6 {
+    position: absolute;
+    width: 700px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.53);
+
+    box-shadow: rgba(0, 0, 0, 0.25) 1px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#child1 {
+    position: absolute;
+    bottom: auto;
+    right: 75%;
+    top: 82%;
+}
+
+#child2 {
+    position: absolute;
+    bottom: auto;
+    left: 75%;
+    top: 82%;
+}
+
+input {
+    border: 1px solid #ccccccc5;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 30px;
+    background-color: #e2e2e2a1;
+    outline-offset: 3px;
+    padding: 10px 1rem;
+    transition: 0.25s;
+}
+input:focus {
+    outline-offset: 5px;
+    background-color: #ffffffb7;
+}
+
+#CPassbutton,
+#regbutton {
+    width: 150px;
+    height: 60px;
+    border: 3px solid #f29c079e;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: transparent;
+    font-size: 15px;
+    font-weight: 550;
+    font-family: "Courier New", Courier, monospace;
+    padding: 10px;
+}
+
+#CPassbutton:hover {
+    background: #ef0d0d;
+    color: white;
+    font-size: 17px;
+}
+#CPassbutton:active,
+#regbutton:active {
+    opacity: 0.5;
+}
+#container7 {
+    position: absolute;
+    width: 550px;
+    padding-top: 30px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.53);
+
+    box-shadow: rgba(0, 0, 0, 0.25) 1px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+th,
+td {
+    width: 160px;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.551);
+    padding: 7px;
+    font-size: 30px;
+}
+
+#containerUpd {
+    position: absolute;
+    width: 550px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.53);
+    box-shadow: rgba(0, 0, 0, 0.25) 1px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#navh1 {
+    font-size: 30px;
+    width: 550px;
+    height: auto;
+    color: rgb(230, 114, 13);
+}
